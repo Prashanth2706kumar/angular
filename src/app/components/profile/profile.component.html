@@ -1,0 +1,13 @@
+<div class="profile">
+    <input class="file" type="file" (change)="handleFileInput($event)"><p>{{ fileName }}</p>
+    <input type="radio" id="word" name="fileType">
+    <label for="word">Word</label>
+
+    <input type="radio" id="excel" name="fileType">
+    <label for="excel">Excel</label>
+ 
+    <br>
+    <button (click)="retrieveFile()">Retrieve File</button>
+    
+
+</div>
